@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра "Собака, кот и мышь"</title>
+    <link href="beauty.css" rel="stylesheet">
+</head>
+<body>
+<caption>Поле игры</caption>
+<table>
+    <tr>
+        <td>Впишите игрока: "собака, кот или мышь"</td>
+        <td><input id="userChoice" onchange="winnerofgame();"></td>
+    </tr>
+    <tr>
+        <td>Выбор компьютера:</td>
+        <td><span class="output" id="compChoice"></span></td>
+    </tr>
+    <tr>
+        <td>Победитель:</td>
+        <td><span class="output" id="winner"></span></td>
+    </tr>
+</table>
+<script src="game.js"></script>
+</body>
+</html>
