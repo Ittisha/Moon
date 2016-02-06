@@ -1,0 +1,11 @@
+table {
+    border: 2px solid gainsboro;
+    height: 180px;
+    border-collapse: collapse;
+    font-size: 18px;
+    padding: 10px;
+}
+.inf {
+    background-color: darkcyan;
+    color: white;
+}

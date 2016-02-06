@@ -22,6 +22,7 @@ function winnerofgame() {
         compChoice.innerHTML = "мышь";
         comp = "мышь";
     }
+    // функция для сравнения двух выборов
     var compare = function (choice1, choice2) {
         if (choice1 === choice2){
             winner.innerHTML = "Давайте жить дружно! =)";
@@ -42,13 +43,17 @@ function winnerofgame() {
                 winner.innerHTML = "Вот мышка и попалась!";
             }
         }
-        else {
+        else if (choice1 === "мышь") {
             if (choice2 === "собака"){
                 winner.innerHTML = "Джеррик, устроим охоту на собак?";
             }
             else {
                 winner.innerHTML = "Джеррик, прячься за пазуху, а то обедом станешь!";
             }
+        }
+        //это на ввод отличной от нужной инфы
+        else {
+            winner.innerHTML = "Внимательно читайте правила игры!!!!!";
         }
     };
     compare (user, comp);
