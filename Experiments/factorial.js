@@ -15,3 +15,4 @@ var factorial2 = function (n) {
     alert (x);
 };
 factorial2(5);
+

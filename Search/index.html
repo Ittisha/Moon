@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск слова</title>
+
+</head>
+<body>
+    <label>Введите текст:
+        <textarea  rows="10" cols="50" id="text_field" onchange="searchword();">
+        </textarea>
+    </label><br>
+    <label>Введите слово для поиска:
+        <input type="text"  name="word" id="word_field" onchange="searchword();">
+    </label><br>
+    <span class="output" id="searchresult"></span>
+<script src="search.js"></script>
+</body>
+</html>
