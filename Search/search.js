@@ -4,5 +4,5 @@ function searchword(){
     var searchresult = document.getElementById("searchresult");
     var text = text_field.value;
     var word = word_field.value;
-    searchresult.innerHTML = text.match(word);
+    searchresult.innerHTML = text.match(new RegExp(word,"g"));
 }
